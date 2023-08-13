@@ -1,0 +1,933 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				 var iphide = document.querySelectorAll("img");
+				for(i = 0; i < iphide.length; i++) {
+					iphide[i].src = iphide[i].src.replace("10.10.20.4", "kamarajengg.edu.in")
+				}
+			  var xpath = "//a[text()='Faculty Profile']";
+			  var matchingElement = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+			  var urlID = matchingElement.href.split('/')
+			  if(urlID[urlID.length-1] == '') {
+			      deptID = urlID[urlID.length-2]
+			  } else {
+			      deptID = urlID[urlID.length-1]
+			  }
+				if(matchingElement != null) {
+			    var sideBar = document.querySelectorAll('.col-lg-2.grid-margin.stretch-card.sidebar ul.list-arrow');
+			    sideBar[sideBar.length-1].innerHTML += '<ul class="list-arrow"> <li>Timetable</li><ul> <li style="list-style-type:none"><a href="/static/timetable/'+deptID+'/odd.pdf">Odd</a></li> <li style="list-style-type:none"><a href="/static/timetable/'+deptID+'/even.pdf">Even</a></li> </ul> <li>Academic Calendar</li><ul> <li style="list-style-type:none"><a href="/media/Academicschedule/22/ACADEMIC_SCHEDULE.pdf">Odd</a></li><li style="list-style-type:none"><a href="/media/Academicschedule/23/ACADEMIC%20CALENDAR.pdf">Even</a></li></ul> </ul>';
+			}
+			});
+		</script>
+		<style>
+			.footer ul li a:hover {
+			filter: brightness(0.50);
+			color: yellow !important;
+			}
+			.hai
+			{
+			style="background: #02386e;"
+			}
+			svg{
+			height: 10px;
+			width:60px
+			}
+			.hh { 
+			animation: animate  
+			1.5s linear infinite; 
+			} 
+			@keyframes animate { 
+			0% { 
+			opacity: 0; 
+			} 
+			50% { 
+			opacity: 0.7; 
+			} 
+			100% { 
+			opacity: 10; 
+			} 
+			} 
+			@media only screen and (max-width: 300px) {
+			.responsive {
+			width: 100%;
+			height: 110px;
+			margin-left: -80px;
+			margin-top: -45px;
+			max-inline-size: 100%;
+			block-size: auto;
+			}
+			@media (min-width: 1200px) 
+			.container, .container-lg, .container-md, .container-sm, .container-xl {
+			max-width: 1240px;
+			}
+			}
+			.nn {
+			vertical-align: middle;
+			border-style: none;
+			width: -webkit-fill-available;
+			height: -webkit-fill-available;
+			overflow-y: auto;
+			}
+			.logo img {
+			width: 1110px;
+			height: 1110px;
+			margin-left: -80px;
+			margin-top: -45px;
+			}
+			@media only screen and (max-width: 768px) {
+			ul.top-right-menu {
+			white-space: nowrap;
+			overscroll-behavior-x: auto;
+			position: inherit;
+			border-radius: 0 !important;
+			}
+			.main-menu {
+			margin-bottom: auto !important;
+			}
+			}
+        </style>
+		<!-- Basic Page Needs
+			================================================== -->
+		<meta charset="utf-8">
+		<title>Best Autonomous Engineering College in South Tamilnadu-KCET</title>
+		<!-- Mobile Specific Metas
+			================================================== -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Construction Html5 Template">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+		<!-- Favicon
+			================================================== -->
+		<link rel="icon" type="image/png" href="/static/images/favicon.png">
+		<!-- CSS
+			================================================== -->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="/static/plugins/bootstrap/bootstrap.min.css">
+		<!-- FontAwesome -->
+		<link rel="stylesheet" href="/static/plugins/fontawesome/css/all.min.css">
+		<!-- Animation -->
+		<link rel="stylesheet" href="/static/plugins/animate-css/animate.css">
+		<!-- slick Carousel -->
+		<link rel="stylesheet" href="/static/plugins/slick/slick.css">
+		<link rel="stylesheet" href="/static/plugins/slick/slick-theme.css">
+		<!-- Colorbox -->
+		<!--<link rel="stylesheet" href="/static/plugins/colorbox/colorbox.css">-->
+		<!-- Template styles-->
+		<link rel="stylesheet" href="/static/css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="body-inner">
+		<div class="main-menu">
+			<ul class='top-right-menu'>
+				<!--<li><a class="last" target="_blank" href="/centres">Centres</a></li>-->
+				<li><a class="last" target="_blank" href="http://www.kamarajengg.edu.in/media/MANDATORY DISCLOSURE.pdf">Mandatory Disclosure</a></li>
+				<li><a class="last"  href="/iqac" >IQAC</a></li>
+				<!--<li><a class="last" href="/nba">NBA</a></li>-->
+				<li><a class="last" href="/NAAC22">NAAC</a></li>
+				<li><a class="last" href="http://www.kamarajengg.edu.in/ni">NIRF</a></li>
+				<li><a class="last" href="http://www.kamarajengg.edu.in/hai/hai">Alumni</a></li>
+				<!--<li><a class="last" href="/corner">Corner</a></li>-->
+				<li><a class="last" href="/gallery">Gallery</a></li>
+				<li><a class="last" href="/career">Careers</a></li>
+				<!--<li><a class="last" href="/blogs">Blogs</a></li>-->
+				<li><a class="last" href="http://118.185.105.250/parent/">Student Corner</a></li>
+				<li><a class="last" href="http://118.185.105.250/parent/login">Faculty Corner</a></li>
+				<li><a class="last" href="/captcha">Contact</a></li>
+			</ul>
+		</div>
+		<div id="top-bar" class="top-bar">
+			<!--/ Container end -->
+		</div>
+		<!--/ Topbar end -->
+		<!-- Header start -->
+		<header id="header" class="header-one">
+			<div class="bg-white">
+				<div class="container">
+					<div class="logo-area">
+						<!--<div class="row align-items-center">-->
+						<!--<nav class="acc">-->
+						<!--      <nav class="logo">
+							<a class="d-block">-->
+						<img  class="nn" src="/static/images/Logo.svg" height="100%"
+							width="100%">
+						<!--<img  src="/static/images/favicon.png" height="110px"
+							width="1120px"><br>-->
+						<!--</a>-->
+						<!--</nav>-->
+						<!-- <div class="col-lg-16 header-right">
+							<ul class="top-info-box">
+							  <li>
+							    <div class="info-box" style="margin-top: -30px;text-align: center;">
+							      <div class="info-box-content">
+							      <br>
+							          <h1 class='logoname1'>KAMARAJ</h1><br>
+							          <p class="info-box-subtitle logoname2" style="margin-top: -10px;text-align: center;"><a>COLLEGE OF ENGINEERING & TECHNOLOGY</a></p>
+							          <p class="logoname3" style="font-size:8.5px;color: #000;font-weight: bold;text-align: center;">(An AUTONOMOUS INSTITUTION - AFFILIATED TO ANNA UNIVERSITY, CHENNAI)</p>
+							          <p class="logoname3" style="font-size:8.5px;color: #000;margin-top: -25px;text-align: center;font-weight: bold;">(Approved By AICTE,New Delhi)</p>
+							          <p class="logoname3" style="font-size:10px;color: #000;margin-top: -20px;text-align: center;font-weight: bold;"><i class="fa fa-envelope"></i>mail@kamarajengg.edu.in,<i class="fa fa-phone" aria-hidden="true">(+91) 4549 278791,(+91) 4549 278171</i><i class="fa fa-mobile">+91 9488524988,+91 9443544988</p></i>
+							
+							          <h6 class='autono' style="width:50%;margin-left: 75px;">AUTONOMOUS</h6>
+							
+							      </div>
+							    </div>
+							  </li>
+							  
+							  <li class="lastinfo-box cc" style="padding-top: 60px;">
+							    <div class="info-box last">
+							      <div class="info-box-content">
+							          <h4>Accreditation</h4>
+							          <nav class="acc">
+							<center><a href="/NAAC22"><img src="/static/images/naac.png" height="70px" width="70px" class='naac'></a> </center>
+							<a href="/js/"><img src="/static/images/nba.png" height="70px" width="70px" class='nba'></a>
+							</nav>
+							          
+							          
+							          
+							      </div>
+							    </div>
+							  </li>
+							  <li style="padding-top: 60px;">
+							    <div class="info-box">
+							      <div class="info-box-content">
+							          <h4>Counselling Code</h4>
+							          <h2 style="text-align: center;color:#fff;background-color: #02386e;border-radius: 10px;letter-spacing: 3px;">4959</h2>
+							      </div>
+							    </div>
+							  </li>
+							  <li class="last" style="padding-top: 45px;">
+							    <div class="info-box last">
+							      <div class="info-box-content">
+							          <nav class="acc">
+							<a><img src="/static/images/25th%20Year%20Logo.png" height="150px" width="150px" class='logo25'></a>
+							</nav>
+							          
+							          
+							          
+							      </div>
+							    </div>
+							  </li>
+							</ul>
+							</div>
+							</div>
+							
+							</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="site-navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-13">
+							<nav class="navbar navbar-expand-lg navbar-dark p-0">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"></span>
+								</button>
+								<div id="navbar-collapse" class="collapse navbar-collapse">
+									<ul class="nav navbar-nav mr-auto">
+										<li class="nav-item dropdown">
+											<a href="/" class="nav-link dropdown-toggle">Home </a>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Administration <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="/about">About KCET</a></li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Management</a>
+													<ul class="dropdown-menu">
+														<li><a href="/mb">Managing Board</a></li>
+														<li><a href="/officebearers">Office Bearers</a></li>
+														<li><a href="/promotors">Promotors</a></li>
+														<li><a href="/endow">Endowments</a></li>
+													</ul>
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Secretary</a>
+													<ul class="dropdown-menu">
+														<li><a href="/secretarymessage">Desk</a></li>
+													</ul>
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Principal</a>
+													<ul class="dropdown-menu">
+														<li><a href="/principalmessage">Desk</a></li>
+													</ul>
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Deans</a>
+													<ul class="dropdown-menu">
+														<li><a href="/deanacademic">Dean-Academic Courses</a></li>
+														<li><a href="/deanresearch">Dean-Research</a></li>
+													</ul>
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Statutory Body - Meeting Minutes</a>
+													<ul class="dropdown-menu">
+														<li><a href="/governingbody">Governing Body</a></li>
+														<li><a href="/academic">Academic Council</a></li>
+														<li><a href="/bosmeeting">Board Of Study</a></li>
+													</ul>
+												</li>
+												<li><a href="/organisation_chart">Organisation Chart</a></li>
+											</ul>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Academics <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="/department">Departments</a></li>
+												<li>
+												<li><a href="/programme">Programme offered</a></li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Curriculum</a>
+													<ul class="dropdown-menu">
+														<li><a href="/syllabus">Syllabus</a></li>
+														<!--<li><a href="#!">Regulation</a></li>-->
+														<!--<li><a href="/openelective">Open electives</a></li>
+															<li><a href="/programme">Employability & Ethics Courses</a></li>
+															<li><a href="/audit">Academic Audit</a></li>
+															-->
+													</ul>
+												</li>
+												<li class="nav-item dropdown">
+													<a href="/academicschedule">Academic Schedule</a>
+												</li>
+												<!--<li class="nav-item dropdown">
+													<a href="/academiccalender">Academic Calender</a>
+													  </li>-->
+												<li><a href="/aicte">AICTE</a></li>
+												<li >
+													<a href="/regulations">Regulations</a>
+												</li>
+												<li >
+													<a href="/tab">Events</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Research <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<!--<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Research Centres</a>
+													 <ul class="dropdown-menu">
+													   <li><a href="#!">Biotechnology</a></li>
+													   <li><a href="#!">Chemistry</a></li>
+													   <li><a href="#!">Polymer Technology</a></li>
+													   <li><a href="#!">Electrical and Electronics Engineering</a></li>
+													   <li><a href="#!">Electronics and Communication Engineering</a></li>
+													   <li><a href="#!">Physics</a></li>
+													   <li><a href="#!">Mechanical Engineering</a></li>
+													   <li><a href="#!">Computer Science Engineering</a></li>
+
+													 </ul>
+													</li>-->
+												<li><a href="/about_research">About Kamaraj R & D Cell</a></li>
+												<li><a href="/advisory_board">Research Advisory Board</a></li>
+												<li><a href="/docs/Institute%20Research%20Policy.pdf">Research Promotion Policy</a></li>
+												<!--<li class="dropdown-submenu"><a href="#!" class="dropdown-toggle" data-toggle="dropdown">Research Profile</a>-->
+												<li>
+													<a href="https://kamarajengg.irins.org/">Research Profile</a> 
+													<!-- <ul class="dropdown-menu">
+														<li><a href="#!">Research Centre</a></li>
+														<li><a href="#!">WoS Indexed Journal Publications</a></li>
+														<li><a href="#!">Scopus Indexed Journal Publications</a></li>
+														<li><a href="#!">Scopus H-Index</a></li>
+														<li><a href="#!">Funds Received</a></li>
+														<li><a href="#!">Patents Filed</a></li>
+														<li><a href="#!">Patents Granted</a></li>
+														<li><a href="#!">Research Supervisors</a></li>
+														<li><a href="#!">Ph.D. Produced</a></li>
+														<li><a href="#!">Ongoing /Completed Projects</a></li>
+														</ul>-->
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Research Centres</a>
+													<ul class="dropdown-menu">
+														<li><a href="/rebio">Biotechnology</a></li>
+														<li><a href="/rechem">Chemistry</a></li>
+														<li><a href="/recse">Computer Science Engineering</a></li>
+														<li><a href="/reeee">Electrical and Electronics Engineering</a></li>
+														<li><a href="/reece">Electronics and Communication Engineering</a></li>
+														<li><a href="/rephy">Physics</a></li>
+														<li><a href="#!">Mechanical Engineering</a></li>
+														<li><a href="#!">Polymer Technology</a></li>
+													</ul>
+												</li>
+												<li><a href="/pool">Pool of Research Supervisors</a></li>
+												<li><a href="/media/Ph.D. Guidelines.pdf" target="_blank">Ph.D. Guidelines</a></li>
+												<li><a href="media/Revised Funded projects - KCET -16.07.2022.pdf">Funded Projects</a></li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">IPR</a>
+													<ul class="dropdown-menu">
+														<li><a href="/ipr">IPR Cell</a></li>
+														<li><a href="/media/List-of-Patents_Website.pdf" target="_blank">Patent Filed/Granted</a></li>
+														<li><a href="/media/List of Copyrights.pdf" target="_blank">Copyrights</a></li>
+														<li><a href="/media/List of IPR events.pdf" target="_blank">IPR Events</a></li>
+													</ul>
+												</li>
+												<!--     <li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Consultancy</a>
+													<ul class="dropdown-menu">
+													  <li><a href="/consultancy_Ongoing">Ongoing</a></li>
+													<li><a href="/consultancy_Completed">Completed</a></li>
+													
+													</ul>
+													</li>-->
+												<li><a href="/research_policy">Awards & Achievements</a></li>
+												<li><a href="/media/re.pdf">Research Facility</a></li>
+												<li><a href="/media/SM.pdf">Seed Money</a></li>
+												<li><a href="/recent">Recent Events</a></li>
+											</ul>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">CoE <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Introduction</a>
+													<ul class="dropdown-menu">
+														<li><a href="/coe">About COE</a></li>
+														<li><a href="/members">Team Members</a></li>
+														<li><a href="/coecontact">Contact</a></li>
+														<!--<li><a href="/executivecounsil">Excecutive Counsil</a></li>
+															<li><a href="/qualityinitiatives">Quality Initiatives</a></li>
+															<li><a href="/patterns">Q/P Patterns</a></li>
+															<li><a href="/examschedule">Exam Schedule</a></li>
+															-->
+													</ul>
+												<li class="dropdown-submenu">
+													<a href="/coecirculars" class="dropdown-toggle" data-toggle="dropdown">Schedule</a>
+													<ul class="dropdown-menu">
+														<li><a href="media/exam_cell/R2020 PG Second Semester Timetable - April 2023.pdf" target="_blank">End Semester Examinations - April 2023 Timetable –  I Year PG</a></li>
+														<li><a href="media/exam_cell/R2021 UG Second Semester Timetable - April 2023.pdf" target="_blank">End Semester Examinations – April 2023 Timetable – I Year UG</a></li>
+														<!--<li><a href="media/Time Table.pdf">R2021-2022 Even timetable</a></li>
+															<li><a href="media/TIME TABLE - I Sem Arrear Exam R2021.pdf" target="_blank">I Sem Arrear Exam R2021 timetable</a></li>
+															<li><a href="media/PG Time Table.pdf" target="_blank">REVISED - M.E. / M.Tech End Semester Examinations Time Table [2nd Sem]</a></li>-->                                    
+													</ul>
+												</li>
+												<li><a href="/results">Results</a></li>
+												<!--<li><a href="/feedback">Feedback</a></li>
+													<li><a href="/coecontact">Contact</a></li>--><!--<li><a href="/coeforms">Download Forms</a></li>-->
+												</li>
+											</ul>
+										</li>
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Placements <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="/tdpc">TDP Cell</a></li>
+												<li><a href="/placementsrecords">Placement Records</a></li>
+												<!--<li><a href="/trainingsoffered">Trainings offered</a></li>-->
+												<li><a href="/ourrecruiters">Our recruiters</a></li>
+												<li><a href="/tdpteam">TDP Team</a></li>
+												<li><a href="/placementcontact">Contact</a></li>
+											</ul>
+										</li>
+										<!--<li class="nav-item dropdown">
+											<a href="/edc" class="nav-link dropdown-toggle">Entrepreneurship Cell</a>
+											
+											</li>-->
+										<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Life@KCET <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="/library">Digital Library</a>
+												</li>
+												<li>
+													<a href="/p/datacenter/">Data Center</a>
+												</li>
+												<li>
+													<a href="/edc">Entrepreneurship Cell</a>
+												</li>
+												<!--<li>
+													<a href="/p/datacenter/">Data Center</a>
+													</li>-->
+												<li>
+													<a href="/infra">Infrastructure</a>
+												</li>
+												<li >
+													<a href="/facilities">Facilities</a>
+												</li>
+												<li >
+													<a href="/iiic">Industry Institute Interaction Cell</a>
+												</li>
+												<li class="dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Incubation Centers</a>
+                                                <ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="/media/vicanpro.pdf">Vicanpro Technologies</a>
+												</li>
+											    </ul>
+                        <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hostel</a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="/boys">Boys</a></li>
+                            <li><a href="/girls">Girls</a></li>
+                          </ul>
+                        </li>
+						
+												 <li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Professional Body</a>
+													<ul class="dropdown-menu">
+													  <li><a href="#!"></a></li>
+													  
+													</ul>
+													</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Clubs</a>
+													<ul class="dropdown-menu">
+														<li><a href="/co_curricular">Co-Curricular</a></li>
+														<li><a href="/extra_curricular">Extra-Curricular</a></li>
+													</ul>
+												</li>
+												<li class="dropdown-submenu">
+													<a href="#!" class="dropdown-toggle" data-toggle="dropdown">Committee</a>
+													<ul class="dropdown-menu">
+													  <li><a href="/p/anti-ragging-committee/">Anti Ragging Committee</a></li>
+													  <li><a href="/media/STUDENT COUNSELLOR COMMITTEE.pdf">Student Counseller Committe</a></li>
+													  <li><a href="/media/INTERNAL COMPLAINT COMMITTEE.pdf">Internal Complaint Committe</a></li>
+													  <li><a href="/media/FINANCE COMMITTEE MEMBERS.pdf">Finance Cmmittee</a></li>
+													  <li><a href="/media/DISCIPLINE AND WELFARE COMMITTEE.pdf">Discipline and Welfare Committee</a></li>
+													  <li><a href="/media/COMPLAINTS CUM REDRESSAL COMMITTEE.pdf">Complaints Cum Redressal Committee</a></li>
+													  <li><a href="/media/SC ST COMMITTEE.pdf">SC ST Committee</a></li>
+													  <li><a href="/media/PLANNING AND MONITORING BOARD COMMITTEE.pdf">Planning and Monitoring Board Committee</a></li>
+													</ul>
+													</li>
+									
+										</li>
+									</ul>
+									<li class="nav-item dropdown">
+											<a href="/admission">
+												<button  class="admission">
+													<h6 class="hh" style="color: #02386e;">Admission <br> 2023-2024</h6>
+												</button>
+											</a>
+											<li class="nav-item dropdown">
+											<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Center For Excellence <i class="fa fa-angle-down"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li>
+													<a href="/aboutcfe">SMC PNEUMATICS</a>
+												</li>
+												<li>
+													<a href="/kcere">Renewable Energy</a>
+												</li>
+												<li>
+													<a href="/ccna">CCNA</a>
+													</li>
+													<li>
+													<a href="/nuvepro">Cloud management</a>
+													</li>
+													<li>
+													<a href="/hebesec">Cyber Security</a>	
+														</li>
+													<li>
+													<a href="/Tessolve">Tessolve Semiconductor</a>
+													</li>
+
+													<li>
+													<a href="/Smartant">Web Technology</a>
+													</li>
+                             
+													<li>
+													<a href="/human">UI/UX Design</a>
+													</li>
+
+													<li>
+													<a href="/Polymertech">Polymer Technology</a>
+													</li>
+
+
+												</li>
+										
+									</ul>
+										</li>
+											<li class="nav-item dropdown">
+											<a href="/dailynews" class="nav-link dropdown-toggle" data-toggle="onclick">Daily News</a>
+									</li>
+									<!--<li>
+											<li class="nav-item dropdown">
+											<a href="/nba_audit" class="nav-link dropdown-toggle" data-toggle="onclick">NBA Audit</a>
+									</li>-->
+									</div>
+							</nav>
+						</div>
+						
+						<!--/ Col end -->
+
+					</div>
+					<div class="search-block" style="display: none;">
+						<label for="search-field" class="w-100 mb-0">
+						<input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+						</label>
+						<span class="search-close">&times;</span>
+					</div>
+					<!-- Site search end -->
+				</div>
+				<!--/ Container end -->
+			</div>
+			<!--/ Navigation end -->
+		</header>
+		<!--/ Header end -->
+<style>
+	.banner-area{
+	min-height: 300px;
+	}
+	.footer ul li a:hover {
+	filter: brightness(0.50);
+	color: yellow !important;
+	}
+	.footer-main {
+	padding: 30px 0 10px;
+	}
+	.copyright {
+	background: #ffb600;
+	color: #111;
+	padding: 5px 0 5px;
+	position: relative;
+	z-index: 1;
+	font-weight: 600;
+	font-size: 12px;
+	}
+	.testimonial {
+	min-height: 275px;
+	position: relative;
+	background-color: #02386e;
+	padding-top: 50px;
+	padding-bottom: 0%;
+	background-position: center;
+	background-size: cover;
+	}
+</style>
+
+<div id="banner-area" class="banner-area" style="background-image:url(/static/images/itban.jpg); height=300px;"></div>
+<!-- Banner area end -->
+ 
+
+
+<!-- Banner area end --> 
+<h1 class="column-title text-center" style="color:#02386e">Department of Information Technology</h1>
+<div class="content-wrapper">
+<div class="row">
+<div class="col-lg-2 grid-margin stretch-card sidebar">
+	<video class="dept_v" width="100%" height="auto" controls>
+		<source src="/static/videos/video.mp4" type="video/mp4">
+	</video>
+	<div class="footer-widget">
+		<h3 class="widget-title">Quick Links</h3>
+		
+			
+				<ul class="list-arrow">
+    <li><a href="/faculty/5/">Faculty Profile</a></li>
+   <li><a href="/dept_highlights/5/">Department Highlights</a></li>
+    <li><a href="/facultyachievements/5">Faculty Achievements</a></li>
+    <!--<li><a href="/facultypublications/5">Publications</a></li>-->
+</ul>
+<!--<h3 class="widget-title">Facilities</h3>-->
+<ul class="list-arrow">
+    <li><a href="/laboratories/5/">Laboratories</a></li>
+    <!--<li><a href="/library/5/">Library</a></li>-->
+    <!--<li><a href="/productdevelopmentcentre/5/">Product Development Centre</a></li>-->
+</ul>
+<!--<h3 class="widget-title">Supporting Staff</h3>-->
+<!--<ul class="list-arrow">
+    <li><a href="/supportingfaculty/5/">Supporting Staff Profile</a></li>
+    </ul>-->
+<!--<h3 class="widget-title">Learning Materials</h3>
+    <ul class="list-arrow">
+        <li><a href="/theorycourses/5/">Theory Courses</a></li>
+        <li><a href="/labcourses/5/">Laboratory Courses</a></li>
+        <li><a href="/sscontent/5/">Slide Share Contents</a></li>
+    </ul>-->
+<!--<h3 class="widget-title">Students</h3>-->
+<ul class="list-arrow">
+    <li><a href="/studentachievements/5/">Students Achievements</a></li>
+    <!--<li><a href="/studentprojectsts/5/">Student Projects</a></li>-->
+</ul>
+<!--<h3 class="widget-title">Pedagogical Initiatives</h3>
+    <ul class="list-arrow">
+        <li><a href="/active_TL/5/">Active TL - Methods</a></li>
+        <li><a href="/active_TL_ICT/">Active TL - ICT Tool Usage</a></li>
+    </ul>-->
+<!-- <h3 class="widget-title">Department Magazine</h3>
+    <ul class="list-arrow">
+        <li><a href="/magazine/5/">Magazine</a></li>
+        <li><a href="/editboard/5/">Editorial Board</a></li>
+    </ul>-->
+<!--<h3 class="widget-title">Board Of Studies</h3>
+    <ul class="list-arrow">
+        <li><a href="/Bos_members/5/">Bos Members</a></li>
+    </ul>
+    <h3 class="widget-title">Programme Assessment Committee</h3>
+    <ul class="list-arrow">
+        <li><a href="/PAC_members/5/">PAC Members</a></li>
+    </ul>-->
+<ul class="list-arrow">
+    <li><a href="/value_added_courses/5/">Value Added Courses</a></li>
+</ul>
+<ul class="list-arrow">
+    <li><a href="/Placement/5/">Placements</a></li>
+    <!--<li><a href="/higher_studies/5/">Higher Studies</a></li>-->
+    <!--<li><a href="/entrepreneur/5/">Entrepreneur</a></li>-->
+</ul>
+<!--<h3 class="widget-title">Industry Interactions</h3>-->
+<!--<h3 class="widget-title">Events Organized</h3>-->
+<ul class="list-arrow">
+    <li><a href="/innovit/5/">Department Association</a></li>
+    <li><a href="/iste/5/">Professional Body</a></li>
+    <!-- <li><a href="/placementcell">Department</a></li>-->
+</ul>
+<ul class="list-arrow">
+    <li><a href="/alumni_events/5/">Alumni Events</a></li>
+    <!--<li><a href="/alumni_meetings/5/">Alumni Meetings</a></li>-->
+    <!--<li><a href="/alumni_testimonials/5/">Alumni Testimonials</a></li>-->
+</ul>
+<ul class="list-arrow">
+    <li><a href="/supportingfaculty/5/">Supporting Staff Profile</a></li>
+</ul>
+<!--<ul class="list-arrow">
+    <li><a href="/media/Edition 8.pdf">Newsletter</a></li>
+    </ul>-->
+<ul class="list-arrow" style=color:"#02386e">
+    <li style=color:"#02386e">Innovation</li>
+    <ul>
+        <li style="list-style-type:none"><a href="/media/ICT - 2020 - 2021.pdf">ICT - 2020 - 2021</a></li>
+        <li style="list-style-type:none"><a href="/media/ICT 2021 - 2022.pdf">ICT 2021 - 2022</a></li>
+    </ul>
+</ul>
+</div>
+</div>
+			
+		
+		
+<div class="col-lg-9 grid-margin stretch-card content table-responsive">
+<div class="card-body text-center name-contain content-container">
+	<h6 class="text-left">About Department</h6>
+	<p class="card-text .content-container">
+		Welcome to the IT Department at Kamaraj College of Engineering and Technology Our department is at the forefront of the ever-evolving field of Information Technology, empowering individuals and organizations to thrive in the digital age. With a legacy dating back to our establishment in 2001, we have been consistently delivering exceptional education and producing high-calibre technocrats.
+
+Our team consists of twelve vibrant and highly qualified faculty members who possess expertise in various domains of Information Technology. Among them, three faculty members have successfully completed their doctoral degrees and four faculty members are actively pursuing their doctorates. This ensures that our students receive the most up-to-date and relevant knowledge in the field.
+
+At our department, we have a clear objective to equip our students with the skills and knowledge needed to tackle the challenges of the rapidly changing world. We pride ourselves on providing comprehensive education that prepares our students to excel in the IT industry.
+
+With Information Technology being an integral part of almost every profession, we emphasize a multidisciplinary approach that encompasses a wide range of key areas. Our curriculum covers Artificial Intelligence, Augmented Reality, Data Analytics, Networking, Data Management, Cyber security, Communications, Web Technology, Software Design, and Systems Management and Administration.
+	</p>
+	<center>
+		<img src="/media/department/staff/DSC_9692.JPG" height="240px" width='300px' 
+			alt="E.Vakaimalar" style="border-radius:5px;border: 2px solid #ffb600; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"> 
+		<p style="color:#fff;text-align:center;display:block;" ></br>Dr.E.Vakaimalar<br>Associate Professor &amp; HOD</br>
+			
+		</p>
+	</center>
+	
+	<h6 class="text-left">Vision</h6>
+	<p class="card-text .content-container">
+		To make the department of Information Technology the unique of its kind in the field of Research and Development activities in this part of world
+	</p>
+	
+	
+	<h6 class="text-left">Mission</h6>
+	<p class="card-text .content-container">To impart highly innovative and technical knowledge in the field of Information Technology to the urban and unreachable rural student folks through Total Quality Education</p>
+	
+	
+	<table class="table table-hover" style="background-color: azure;border-radius: 10px;">
+		<thead>
+			<tr class="table-row" style="font-size: 14px;background-color: #ffb066;font-weight: 700;color: white;">
+				<th style="text-align: center;" colspan="1">Programmes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="table-data">
+				
+				
+				<td>
+					<center style="font-size: 14px;"><strong>B.Tech. Information Technology <br> </strong></center>
+					<center style="font-size: 14px;">
+						<div style="text-decoration: underline;"><a href="/prog_off/5/6">View More</a></div>
+					</center>
+				</td>
+				
+												
+			</tr>
+		</tbody>
+	</table>
+	
+</div>
+
+				
+			</div>
+		</div>
+	</div>
+	<!--<div style="border: 1px solid white;">
+		<div class="prog" style="text-align:left;">
+			<h3 style="color:white;">Programmes</h3>
+		</div>
+		</div>-->
+	<footer id="footer" class="footer bg-overlay">
+		<div class="footer-main">
+			<div class="container">
+				<div class="row1 justify-content-between">
+					<div class="col-sm-9 col-md-6 footer-widget footer-about">
+						<!-- <h3 class="widget-title">About Us</h3>-->
+						<img loading="lazy" width="200px" class="footer-logo" src="/static/images/favicon.png" alt="Constra">
+						<p style="color: #fff;">KAMARAJ COLLEGE OF ENGINEERING & TECHNOLOGY<br/>
+							S.P.G.Chidambara nadar - C.Nagammal Campus<br/>
+							S.P.G.C. Nagar, K.Vellakulam-625 701, Near Virudhunagar
+						</p>
+						<div class="footer-social">
+							<ul>
+								<li><a href="https://www.facebook.com/Kamaraj-College-of-Engineering-and-Technology-An-Autonomous-Institution-106933088334648" target='_blank' aria-label="Facebook"><i
+									class="fab fa-facebook-f"></i></a></li>
+								<li><a href="https://twitter.com/Kamaraj_engg" aria-label="Twitter" target='_blank'><i class="fab fa-twitter"></i></a>
+								</li>
+								<li><a href="https://www.instagram.com/kamaraj.engg.official/" aria-label="Instagram" target='_blank'><i
+									class="fab fa-instagram"></i></a></li>
+								<li><a href="https://www.instagram.com/kamaraj.engg.official/" aria-label="youtube " target='_blank'><i
+									class="fab fa-youtube"></i></a></li>
+								<li><a href="https://www.linkedin.com/school/kamaraj-college-of-engineering-and-technology-autonomous/posts/?feedView=all" target='_blank' aria-label="Instagram"><i
+									class="fab fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+						<!-- Footer social end -->
+					</div>
+					<!-- Col end -->
+					<div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+						<h3 class="widget-title">Quick Links</h3>
+						<ul class="list-arrow down-url">
+							<li><a href="/about" style='color:#fff'>About Us</a></li>
+							<li><a href="/department" style='color:#fff'>Department</a></li>
+							<li><a href="/programme" style='color:#fff'>Programme</a></li>
+							<li><a href="/infra" style='color:#fff'>Infrastructure</a></li>
+							<li><a href="/tdpc" style='color:#fff'">Placements</a></li>
+							<li><a href="/Photo" style='color:#fff'>Photo</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/Admission Policy.pdf" style='color:#fff' target="_blank">Admission Policy & Process</a></li>
+							<li><a href="/results" style='color:#fff'>Results</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+						<h3 class="widget-title">Quick Links</h3>
+						<ul class="list-arrow down-url">
+							<li><a href="/ac" style='color:#fff' target="_blank">AICTE</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/ANTI-RAGGING COMMITTEE.pdf" style='color:#fff' target="_blank">Anti Ragging</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/COMPLAINTS CUM REDRESSAL COMMITTEE.pdf" style='color:#fff' target="_blank">Grievance Redressal</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/MANDATORY DISCLOSURE.pdf" style='color:#fff'" target="_blank">Mandatory Disclosure</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/nba.pdf" style='color:#fff'" target="_blank">NBA Accreditation Status</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/2022-2023 ANNA  UNIVERSITY AFFILIATION.pdf" style='color:#fff'" target="_blank">Anna University Affiliation</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/http://www.kamarajengg.edu.in/ni" style='color:#fff'" target="_blank">NIRF</a></li>
+							<li><a href="http://www.kamarajengg.edu.in/media/quick/naac 2021.pdf" style='color:#fff'" target="_blank">NAAC</a></li>
+							<!--<li><a href="/corner" style='color:#fff'>Corner</a></li>
+								<li><a href="/blogs" style='color:#fff'>Blogs</a></li>-->
+							<!--              <li><a href="/Photo" style='color:#fff'>Photo</a></li>-->
+						</ul>
+					</div>
+					<!-- Col end -->
+				</div>
+				<!-- Row end -->
+			</div>
+			<!-- Container end -->
+		</div>
+		<!-- Footer main end -->
+		<div class="copyright">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="copyright-info text-center text-md-left">
+							<span>
+								Copyright &copy; <script>
+									document.write(new Date().getFullYear())
+								</script>,Developed by Kamaraj Engineering College Website Team
+							</span>
+							<br>Total Website Vistors  : 432093
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="footer-menu text-center text-md-right">
+							<ul class="list-unstyled">
+								<!--   <li><a href="/centre">Centre</a></li>
+									<li><a href="/circular">Circular</a></li>
+									<li><a href="/forms">Forms</a></li>
+									<li><a href="/aicte">AICTE</a></li>
+									<li><a href="/contactus">Contact</a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- Row end -->
+				<div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+					<button class="btn btn-primary" title="Back to Top">
+					<i class="fa fa-angle-double-up"></i>
+					</button>
+				</div>
+			</div>
+			<!-- Container end -->
+		</div>
+		<!-- Copyright end -->
+	</footer>
+	<!-- Footer end -->
+	<div class="icon-bar">
+		<a href="https://www.facebook.com/Kamaraj-College-of-Engineering-and-Technology-An-Autonomous-Institution-106933088334648" class="facebook"><i class="fa fa-facebook"></i></a> 
+		<a href="https://twitter.com/Kamaraj_engg" class="twitter"><i class="fa fa-twitter"></i></a> 
+		<a href="https://www.instagram.com/kamaraj.engg.official/" class="instagram" style="background: black;"><i class="fa fa-instagram"></i></a> 
+		<a href="https://www.linkedin.com/school/kamaraj-college-of-engineering-and-technology-autonomous/posts/?feedView=all" class="linkedin"><i class="fa fa-linkedin"></i></a>
+		<a href="https://www.youtube.com/c/KamarajCollegeofEnggTech" class="youtube"><i class="fa fa-youtube"></i></a> 
+	</div>
+	<style>
+		.po h6{text-align: left;}
+		.po li{text-align: left;color: white;}
+	</style>
+	<style type="text/css">
+		.footer ul li a:hover {
+		filter: brightness(0.50);
+		color: yellow !important;
+		}
+		.footer-main {
+		padding: 30px 0 10px;
+		}
+		.copyright {
+		background: #ffb600;
+		color: #111;
+		padding: 5px 0 5px;
+		position: relative;
+		z-index: 1;
+		font-weight: 600;
+		font-size: 12px;
+		}
+		.footer-logo{
+		margin-bottom: 25px;
+		height: 150px;
+		width: 150px;
+		float: left;
+		margin-left: -50px;
+		display: block;
+		margin-top: -10px;
+		}
+		.col-sm-9{
+		margin-top: 25px;}
+		.row1 {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-right: -100px;
+		margin-left: -20px;
+		}
+	</style>
+	<!-- Javascript Files
+		================================================== -->
+	<!-- initialize jQuery Library -->
+	<script src="/static/plugins/jQuery/jquery.min.js"></script>
+	<!-- Bootstrap jQuery -->
+	<script src="/static/plugins/bootstrap/bootstrap.min.js" defer></script>
+	<!-- Slick Carousel -->
+	<script src="/static/plugins/slick/slick.min.js"></script>
+	<script src="/static/plugins/slick/slick-animation.min.js"></script>
+	<!-- Color box -->
+	<script src="/static/plugins/colorbox/jquery.colorbox.js"></script>
+	<!-- shuffle -->
+	<script src="/static/plugins/shuffle/shuffle.min.js" defer></script>
+	<!-- Google Map API Key-->
+	<!-- Template custom -->
+	<script src="/static/js/script.js"></script>
+</div>
+<!-- Body inner end -->
+</body>
+</html>

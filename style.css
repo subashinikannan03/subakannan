@@ -1,0 +1,69 @@
+/********** Common CSS Starts **********/  
+* {
+     margin:0px;
+     padding:0px;
+}
+ body, html {
+     font-family Roboto, sans-serif, arial;
+     background:#f0f3fa; 
+}
+ .width-100 {
+     width:100%;
+     float:left;
+}
+ .width-20 {
+     width:20%;
+     float:left;
+}
+ .width-25 {
+     width:25%;
+     float:left;
+}
+ .width-30 {
+     width:30%;
+     float:left;
+}
+ .width-33 {
+     width:33%;
+     float:left;
+}
+ .width-40 {
+     width:40%;
+     float:left;
+}
+ .width-50 {
+     width:50%;
+     float:left;
+}
+ .width-60 {
+     width:60%;
+     float:left;
+}
+ .width-70 {
+     width:70%;
+     float:left;
+}
+ .width-80 {
+     width:80%;
+     float:left;
+}
+ .width-90 {
+     width:90%;
+     float:left;
+}
+ .width-10 {
+     width:10%;
+     float:left;
+}
+ .container {
+     width:1500px;
+     margin:0 auto;
+}
+ .plr {
+     padding-left:100px;
+     padding-right:100px;
+}
+ .margin-top-50 {
+     margin-top:50px;
+}
+/********** Common CSS Ends **********/

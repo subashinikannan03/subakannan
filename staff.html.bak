@@ -1,0 +1,435 @@
+<html>
+<head>
+<style>
+* {
+     margin:0px;
+     padding:0px;
+}
+ body, html {
+     font-family Roboto, sans-serif, arial;
+     background:white; 
+}
+ .width-100 {
+     width:100%;
+     float:left;
+}
+ .width-20 {
+     width:20%;
+     float:left;
+}
+ .width-25 {
+     width:25%;
+     float:left;
+}
+ .width-30 {
+     width:30%;
+     float:left;
+}
+ .width-33 {
+     width:33%;
+     float:left;
+}
+ .width-40 {
+     width:40%;
+     float:left;
+}
+ .width-50 {
+     width:50%;
+     float:left;
+}
+ .width-60 {
+     width:60%;
+     float:left;
+}
+ .width-70 {
+     width:70%;
+     float:left;
+}
+ .width-80 {
+     width:80%;
+     float:left;
+}
+ .width-90 {
+     width:90%;
+     float:left;
+}
+ .width-10 {
+     width:10%;
+     float:left;
+}
+ .container {
+     width:1500px;
+     margin:0 auto;
+}
+ .plr {
+  padding-left:100px;
+     padding-right:100px;
+}
+ .margin-top-50 {
+     margin-top:50px;
+}
+
+.top-header {
+     background:red;
+     padding:5px 0px;
+     border-bottom: 1px solid #3131315e;
+}
+ .news-list {
+     background: #fff;
+     color: red;
+     padding: 6px;
+     font-size: 20px;
+}
+ .headquote {
+     font-size:18px;
+     color:#ffffff;
+     width:80%;
+}
+/********** Logo And Menu Starts **********/  
+* {
+  font-family: Nunito, sans-serif;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  line-height: 25px;
+}
+
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+
+.outer-container {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.inner-container {
+  max-width: 1320px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.heading-text {
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+.sub-heading-text {
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.team-1-swiper {
+  overflow: hidden;
+}
+
+.team-2-swiper {
+  overflow: hidden;
+}
+
+.team-name {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.team-member-image {
+  width: 270px;
+  height: 230px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  width: 200px;
+  margin-top: 15px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.position {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  line-height: 24px;
+  width: 200px;
+  margin-top: 5px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.arrow-left-1 {
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.swiper-slide {
+  margin-top: 0px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.arrow-left-2 {
+  transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+  margin-top: 0px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.arrow-right-1 {
+  height: 14px;
+  cursor: pointer;
+}
+
+.swiper-slide.empty {
+  width: auto;
+  margin-top: 0px;
+  margin-right: 40px;
+  margin-bottom: 0px;
+  margin-left: -20px;
+}
+
+.swiper-container.team-1-swiper,
+.swiper-container.team-2-swiper {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+.arrow-right-2 {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .heading-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  .sub-heading-text {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .team-member-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .outer-container {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+}
+</style>
+<div class="responsive-container-block outer-container">
+  <div class="responsive-container-block inner-container">
+    <div class="responsive-cell-block wk-desk-4 wk-ipadp-4 wk-tab-12 wk-mobile-12">
+      <p class="text-blk heading-text">
+        Meet our department staffs
+      </p>
+      <p class="text-blk sub-heading-text">
+        
+      </p>
+    </div>
+    <div class="responsive-cell-block wk-desk-8 wk-ipadp-8 wk-tab-12 wk-mobile-12">
+      <p class="text-blk team-name">
+        
+      </p>
+      <div class="responsive-container-block">
+        <div class="swiper-container team-1-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/05_-_E.jpg">
+                <p class="text-blk name">
+                  Dr Vakaimalar Elamaran
+                </p>
+                <p class="text-blk position">
+                  HOD
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/T0604170.jpg">
+                <p class="text-blk name">
+                  Dr.Aarthy
+                </p>
+                <p class="text-blk position">
+                 Assistant Professor 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/Mrs.V.Deepa_priyaM.EPh.D.jpg">
+                <p class="text-blk name">
+                  Mrs Deepa Priya Viswasam
+                </p>
+                <p class="text-blk position">
+                  Assistant Professor 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/T0807278.jpg">
+                <p class="text-blk name">
+                  Mr Vendhan Duraisamy
+                </p>
+                <p class="text-blk position">
+                 Assistant Professor 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <div class="swiper-button-nexts">
+            <img class="arrow-right-1" src="http://www.kamarajengg.edu.in/media/department/staff/T1412566.jpg">
+          </div>
+          <div class="swiper-button-prevs">
+            <img class="arrow-left-1" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+          </div>
+        </div>
+      </div>
+      <p class="text-blk team-name">
+      
+      </p>
+      <div class="responsive-container-block">
+        <div class="swiper-container team-2-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/S.jpg">
+                <p class="text-blk name">
+                  MR ARUN PRASAD S
+                </p>
+                <p class="text-blk position">
+                Assistant Professor 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/T2108705.jpg">
+                <p class="text-blk name">
+                  Mr Raj Kannan C
+                </p>
+                <p class="text-blk position">
+                 Assistant Professor 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/T1412566.jpg">
+                <p class="text-blk name">
+                  Ms Kaviya P
+                </p>
+                <p class="text-blk position">
+                  Assistant Professor 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="responsive-cell-block wk-desk-4 wk-ipadp-6 wk-tab-6 wk-mobile-12">
+                <img class="team-member-image" src="http://www.kamarajengg.edu.in/media/department/staff/T2112712.jpg">
+                <p class="text-blk name">
+                  Mrs Priyadharshini P
+                </p>
+                <p class="text-blk position">
+                  Assistant Professor 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <div class="swiper-button-nexts2">
+            <img class="arrow-right-2" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+          </div>
+          <div class="swiper-button-prevs2">
+            <img class="arrow-left-2" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Path.svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

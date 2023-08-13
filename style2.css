@@ -1,0 +1,18 @@
+/********** Top Header Starts **********/  
+.top-header {
+     background:#2196f3;
+     padding:5px 0px;
+     border-bottom: 1px solid #3131315e;
+}
+ .news-list {
+     background: #fff;
+     color: red;
+     padding: 6px;
+     font-size: 20px;
+}
+ .headquote {
+     font-size:18px;
+     color:#ffffff;
+     width:80%;
+}
+/********** Top Header Ends **********/
